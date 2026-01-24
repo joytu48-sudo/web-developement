@@ -1,0 +1,19 @@
+li{
+list-style: circle;
+}
+
+#changed
+{
+    font-size: 30px;
+}
+.another
+{
+    font-style: italic;
+}
+*
+{
+    background-color: bisque;
+}
+h1,p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
