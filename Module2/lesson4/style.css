@@ -1,0 +1,47 @@
+/*attribute selectors*/
+
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+input[type="password"] {
+    border: 2px solid red;
+}
+
+/* child selctor*/
+
+ul>li {
+    color: brown;
+}
+
+/* sibling selector */
+
+p+p {
+    font-family: cursive;
+}
+
+/* psuedo classes */
+
+a:hover {
+    color: brown;
+    font-size: 25px;
+}
+
+li:nth-child(2) {
+    background-color: cornflowerblue;
+}
+
+/* psuedo elements*/
+
+h1::before {
+    content: "🍗";
+}
+
+h1::after {
+    content: "🍗";
+}
+
+p::first-letter {
+    color: darkred;
+    font-size: 35px;
+}
