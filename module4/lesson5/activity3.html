@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>javascript call stack</h1>
+        <p id="avg"></p>
+
+        <script>
+            function add(a,b) {
+                return a+b;
+            }
+
+            function average(a,b) {
+                return add(a,b)/2;
+            }
+
+            document.getElementById("avg").innerHTML = average(10,20);
+        </script>
+    </body>
+</html>
