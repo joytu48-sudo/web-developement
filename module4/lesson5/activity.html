@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Javascript array</h1>
+        <p id="array"></p>
+        <p id="join"></p>
+        <p id="pop"></p>
+        <script>
+            var fruits = ["Banana","orange","apple","mango","kiwi"];
+            document.getElementById("array").innerHTML = fruits;
+
+            document.getElementById("join").innerHTML = fruits.join("*");
+
+            fruits.pop();
+            document.getElementById("pop").innerHTML = fruits;
+        </script>
+    </body>
+</html>
