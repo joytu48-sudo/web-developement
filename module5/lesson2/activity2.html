@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <h1>class inheritance</h1>
+    <p id="details"></p>
+
+    <script>
+        //parent class
+        class Animal {
+            constructor(name) {
+                this.name = name;
+            }
+            sound() {
+                return this.name + " makes a sound";
+            }
+        }
+
+        //child class inheriting from animal
+        class Dog extends Animal {
+            constructor(name, breed) {
+                super(name);
+                this.breed = breed
+            }
+        }
+
+        //create an instance of a dog
+
+        const myDog = new Dog ("Dong","Rottweiler")
+
+        //display the details
+        document.getElementById("details").innerHTML = myDog.sound() + " it is a " + myDog.breed + ".";
+    </script>
+</body>
+
+</html>
