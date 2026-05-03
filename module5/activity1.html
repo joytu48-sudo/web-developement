@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+    <h1>JavaScript Array</h1>
+    <p id="og_array"></p>
+    <button onclick="ascending()">Ascending order</button>
+    <button onclick="descending()">Descending order</button>
+    <p id="sorted Array"></p>
+
+    <script>
+        var points = [400.300, 213, 341, 348, 234]
+        document.getElementById("og_array").innerHTML = "og_array" + points;
+
+
+        function ascending() {
+            points.sort(
+                function (a, b) {
+                    return a - b
+                }
+            )
+            document.getElementById("sorted Array").innerHTML = ("ascending") + points;
+        }
+        function descending() {
+            points.sort(
+                function (a, b) {
+                    return b - a
+                }
+            )
+            document.getElementById("sorted Array").innerHTML = ("descending") + points;
+        }
+
+
+
+    </script>
+</body>
+
+</html>
