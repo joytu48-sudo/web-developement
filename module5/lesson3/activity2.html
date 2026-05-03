@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>array mapping</h1>
+    <p id="og_array"></p>
+    <p id="mapped_array"></p>
+
+    <script>
+        var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        document.getElementById("og_array").innerHTML = "original array " + numbers;
+
+        function myFunction(num) {
+            return num * 10
+        }
+
+        var mappedarray = numbers.map(myFunction);
+        document.getElementById("mapped_array").innerHTML = ("mapped array") + mappedarray;
+
+    </script>
+</body>
+
+</html>
