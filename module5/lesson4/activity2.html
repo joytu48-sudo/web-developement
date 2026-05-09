@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+
+    <body>
+        <h1>JS Error catching</h1>
+        <p id="result"></p>
+
+        <script>
+            try {
+                addalert("welcome to error catching")
+            }
+
+            catch (error) {
+document.getElementById("result").innerHTML =error.message;
+            }
+        </script>
+    </body>
+</html>
