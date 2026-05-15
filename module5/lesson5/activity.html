@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>JS to JSON to JS</h1>
+        <p id="text"></p>
+        <p id="result"></p>
+
+        <script>
+            var person = {
+                name:"Sushmoy Talukder",
+                age:"12",
+                city:"Dhaka"
+            }
+            //convert JS to JSON string
+            var JSONstring = JSON.stringify(person);
+            //display
+            document.getElementById("text").innerHTML = JSONstring;
+
+            //convert JSON to JS
+            var JSONobject = JSON.parse(JSONstring);
+            //display
+            document.getElementById("result").innerHTML = "name: "+ JSONobject.name +" age: "+JSONobject.age+" city: "+JSONobject.city;
+        </script>
+    </body>
+</html>
