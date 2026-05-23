@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Javascript palindrome</h1>
+        <script>
+            function palindrome(word ){
+                //remove any special charecters, spaces and convert lowercase
+                var input = word.replace(/[^A-Za-z0-9]/g, '').toLowerCase();
+                var reversed = input.split("").reverse().join("");
+                if(input==reversed){
+                    document.write(word + " is a palindrome");
+                }
+                else {
+                    document.write(word+ " is not a palindrome")
+                }
+            }
+            palindrome("Tasmia")
+        </script>
+    </body>
+</html>
