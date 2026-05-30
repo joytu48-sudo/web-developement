@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+
+        #dice {
+            font-size: 300px;
+        }
+
+        #dice:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div>click on the dice...</div>
+    <div id="dice" onclick="stopstart()"></div>
+</body>
+<script>
+    var dices = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    var stopped = true;
+    var interval;
+    function change() {
+        var random = Math.floor(Math.random() * 6);
+        dice.innerHTML = dices[random];
+    }
+    function stopstart() {
+        if (stopped) {
+            interval = setInterval(change, 100);
+            stopped = false
+        } else {
+            clearInterval(interval);
+            stopped = true
+
+        }
+    }
+    window.onload = function () {
+        dice = document.getElementById("dice");
+        stopstart();
+    }
+</script>
+
+</html>
